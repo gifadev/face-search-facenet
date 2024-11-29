@@ -1,0 +1,8 @@
+elasticsearch
+sentence-transformers
+Pillow
+matplotlib
+IPython
+fastapi
+python-multipart
+deepface
