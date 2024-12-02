@@ -1,1 +1,3 @@
 myenv/
+dataset/persons/*
+dataset/lost-persons/*

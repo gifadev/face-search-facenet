@@ -1,19 +1,40 @@
 import os
 from app.util import Util
+from app.logger import logger
 
-def search_by_image(service, filename):
+async def search_by_image(image_path: str, service) -> dict:
     """
-    Cari orang berdasarkan gambar.
+    Search for a person using facial recognition.
+    Args:
+        image_path: Path to the image file
+        service: Instance of PersonService
+    Returns:
+        dict: Search results with person data if found
     """
-    if not os.path.exists(filename):
-        raise FileNotFoundError(f"File not found: {filename}")
+    try:
+        logger.info(f"Checking if image exists: {image_path}")
+        if not os.path.exists(image_path):
+            error_msg = f"File not found: {image_path}"
+            logger.error(error_msg)
+            raise FileNotFoundError(error_msg)
 
-    # Cari orang
-    result = service.find_person_by_image(filename)
+        # Search for person
+        logger.info("Searching for person using facial recognition")
+        result = await service.find_person_by_image(image_path)
 
-    if not result:
-        print("Image not recognized or not registered.")
-        return None
+        if not result:
+            logger.info("No matching person found")
+            return {
+                "status": "not_found",
+                "message": "No matching person found in the database"
+            }
 
-    print("Person data found:", result)
-    return result
+        logger.info(f"Person found with score: {result.get('_score', 'N/A')}")
+        return {
+            "status": "success",
+            "message": "Person found",
+            "data": result
+        }
+    except Exception as e:
+        logger.error(f"Error in search_by_image: {str(e)}", exc_info=True)
+        raise

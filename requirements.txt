@@ -1,4 +1,4 @@
-elasticsearch
+elasticsearch[async]==8.10.0
 sentence-transformers
 Pillow
 matplotlib
@@ -6,3 +6,9 @@ IPython
 fastapi
 python-multipart
 deepface
+pydantic-settings
+aiofiles
+python-jose[cryptography]
+python-dateutil
+uvicorn[standard]
+aiohttp>=3.8.0
