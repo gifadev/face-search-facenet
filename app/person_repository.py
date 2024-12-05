@@ -10,11 +10,15 @@ class PersonRepository:
     def __init__(self, es_client: AsyncElasticsearch, index_name: str):
         self.es_client = es_client
         self._index_name = index_name
+        # Panggil setup index saat inisialisasi
+        self._setup_index()
 
-    async def _setup_index(self):
+    def _setup_index(self):
         """Setup Elasticsearch index with proper mappings."""
         try:
-            await Util.create_index(self.es_client, self._index_name)
+            # Gunakan client yang sama
+            es = Util.get_connection()
+            Util.create_index(es, self._index_name)
         except Exception as e:
             logger.error(f"Error setting up index: {str(e)}", exc_info=True)
             raise
@@ -29,8 +33,9 @@ class PersonRepository:
             await person.generate_embedding()
             document = person.to_dict()
             
-            # Gunakan metode asinkron dengan benar
-            response = self.es_client.index(index=self._index_name, document=document)
+            # Gunakan client yang sama
+            es = Util.get_connection()
+            response = es.index(index=self._index_name, document=document)
             logger.info(f"Successfully inserted person: {person.full_name} with response: {response}")
         except Exception as e:
             logger.error(f"Error inserting person: {str(e)}", exc_info=True)
@@ -49,9 +54,10 @@ class PersonRepository:
                 operations.append({"index": {"_index": self._index_name}})
                 operations.append(person.to_dict())
 
-            # Gunakan bulk asinkron
-            response = await self.es_client.bulk(body=operations)
-            if response['errors']:
+            # Gunakan client yang sama
+            es = Util.get_connection()
+            response = es.bulk(body=operations)
+            if response.get('errors', False):
                 logger.error("Bulk insert encountered errors.")
                 raise Exception("Some documents failed during bulk insert.")
             
@@ -83,8 +89,9 @@ class PersonRepository:
                 ]
             }
 
-            # Gunakan pencarian asinkron
-            search_result = self.es_client.search(
+            # Gunakan client yang sama
+            es = Util.get_connection()
+            search_result = es.search(
                 index=self._index_name,
                 body=search_body,
                 size=settings.ELASTICSEARCH_SEARCH_SIZE

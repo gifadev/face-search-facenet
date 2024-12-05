@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Request
 from fastapi.responses import JSONResponse
 from app.search import search_by_image
-from app.register import register_person
+from app.register import register_person, register_persons
 from app.util import Util
 from app.person_service import PersonService
 from app.person_repository import PersonRepository
@@ -207,66 +207,42 @@ async def register_bulk_persons(
         if len(persons) != len(files):
             raise ImageSearchException("Jumlah data person harus sama dengan jumlah file gambar")
         
-        results = []
-        
-        # Process each person and image in parallel
-        async def process_person(person_data, image_file, index):
-            try:
-                # Validate date format
-                try:
-                    datetime.strptime(person_data["birth_date"], '%Y-%m-%d')
-                except ValueError:
-                    raise ImageSearchException("Invalid birth date format. Use YYYY-MM-DD")
-                
-                # Validate gender
-                if not person_data["gender"].strip():
-                    raise ImageSearchException("Gender cannot be empty")
-                
+        # Process images in parallel
+        async def save_images():
+            tasks = []
+            for idx, image_file in enumerate(files):
                 # Validate image
                 validate_image_file(image_file)
-                
                 # Save image
-                image_path = await save_upload_file(image_file, settings.DATASET_FOLDER)
-                
-                # Prepare person data with image path
-                person_data["image_path"] = image_path
-                
-                # Register person
-                result = await register_person(person_data, person_service)
-                logger.info(f"Successfully registered person: {person_data['full_name']}")
-                
-                return {
-                    "success": True, 
-                    "data": result, 
-                    "index": index
-                }
-            except Exception as e:
-                logger.error(f"Error processing person at index {index}: {str(e)}")
-                return {
-                    "success": False, 
-                    "error": str(e), 
-                    "index": index,
-                    "person_data": person_data
-                }
+                task = save_upload_file(image_file, settings.DATASET_FOLDER)
+                tasks.append(task)
+            return await asyncio.gather(*tasks)
         
-        # Create tasks for parallel processing
-        tasks = [
-            process_person(person_data, image_file, idx)
-            for idx, (person_data, image_file) in enumerate(zip(persons, files))
-        ]
+        # Save all images and get their paths
+        image_paths = await save_images()
         
-        # Execute all tasks concurrently
-        results = await asyncio.gather(*tasks)
+        # Add image paths to person data
+        for person_data, image_path in zip(persons, image_paths):
+            # Validate date format
+            try:
+                datetime.strptime(person_data["birth_date"], '%Y-%m-%d')
+            except ValueError:
+                raise ImageSearchException("Invalid birth date format. Use YYYY-MM-DD")
+            
+            # Validate gender
+            if not person_data["gender"].strip():
+                raise ImageSearchException("Gender cannot be empty")
+            
+            person_data["image_path"] = image_path
         
-        # Separate successful and failed registrations
-        successful = [r for r in results if r["success"]]
-        failed = [r for r in results if not r["success"]]
+        # Bulk register all persons
+        results = await register_persons(persons, person_service)
         
         return JSONResponse({
             "status": "completed",
             "total": len(results),
-            "successful": len(successful),
-            "failed": len(failed),
+            "successful": len(results),
+            "failed": 0,
             "results": results
         })
         

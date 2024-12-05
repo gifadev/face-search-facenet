@@ -6158,3 +6158,176 @@ ValueError: Face could not be detected in dataset/lost-persons/3203204b1ff54316a
 2024-12-05 11:04:09,536 - image_search - INFO - Searching database with image embedding
 2024-12-05 11:04:09,542 - image_search - INFO - No matches found above threshold
 2024-12-05 11:04:09,542 - image_search - INFO - No matching person found
+2024-12-05 11:22:30,812 - image_search - INFO - Checking if image exists: dataset/lost-persons/e4116c2e42e446869f9f54124f0cb4c5.jpg
+2024-12-05 11:22:30,812 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 11:22:30,813 - image_search - INFO - Getting embedding for image: dataset/lost-persons/e4116c2e42e446869f9f54124f0cb4c5.jpg
+2024-12-05 11:22:30,813 - image_search - INFO - Generating embedding for image: dataset/lost-persons/e4116c2e42e446869f9f54124f0cb4c5.jpg
+2024-12-05 11:22:31,186 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 11:22:31,186 - image_search - INFO - Searching database with image embedding
+2024-12-05 11:22:31,245 - image_search - INFO - Found 1 matching results
+2024-12-05 11:22:31,245 - image_search - INFO - Person found with score: N/A
+2024-12-05 11:22:31,245 - image_search - INFO - Successfully performed search with image: 2024-12-05-11-22-28-857.jpg
+2024-12-05 11:22:36,716 - image_search - INFO - Checking if image exists: dataset/lost-persons/740154b5606c4635b0481e104c4f1cd4.jpg
+2024-12-05 11:22:36,716 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 11:22:36,716 - image_search - INFO - Getting embedding for image: dataset/lost-persons/740154b5606c4635b0481e104c4f1cd4.jpg
+2024-12-05 11:22:36,717 - image_search - INFO - Generating embedding for image: dataset/lost-persons/740154b5606c4635b0481e104c4f1cd4.jpg
+2024-12-05 11:22:37,103 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 11:22:37,103 - image_search - INFO - Searching database with image embedding
+2024-12-05 11:22:37,109 - image_search - INFO - Found 1 matching results
+2024-12-05 11:22:37,109 - image_search - INFO - Person found with score: N/A
+2024-12-05 11:22:37,110 - image_search - INFO - Successfully performed search with image: 2024-12-05-11-22-35-244.jpg
+2024-12-05 11:22:43,292 - image_search - INFO - Checking if image exists: dataset/lost-persons/5d15286a302248209819dbebde42130d.jpg
+2024-12-05 11:22:43,292 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 11:22:43,292 - image_search - INFO - Getting embedding for image: dataset/lost-persons/5d15286a302248209819dbebde42130d.jpg
+2024-12-05 11:22:43,293 - image_search - INFO - Generating embedding for image: dataset/lost-persons/5d15286a302248209819dbebde42130d.jpg
+2024-12-05 11:22:43,670 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 11:22:43,670 - image_search - INFO - Searching database with image embedding
+2024-12-05 11:22:43,675 - image_search - INFO - Found 1 matching results
+2024-12-05 11:22:43,675 - image_search - INFO - Person found with score: N/A
+2024-12-05 11:22:43,676 - image_search - INFO - Successfully performed search with image: 2024-12-05-11-22-41-668.jpg
+2024-12-05 11:23:02,624 - image_search - INFO - Checking if image exists: dataset/lost-persons/c46299b15f934082beee5364c0ac8580.jpg
+2024-12-05 11:23:02,624 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 11:23:02,624 - image_search - INFO - Getting embedding for image: dataset/lost-persons/c46299b15f934082beee5364c0ac8580.jpg
+2024-12-05 11:23:02,625 - image_search - INFO - Generating embedding for image: dataset/lost-persons/c46299b15f934082beee5364c0ac8580.jpg
+2024-12-05 11:23:02,893 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 11:23:02,894 - image_search - INFO - Searching database with image embedding
+2024-12-05 11:23:02,900 - image_search - INFO - Found 1 matching results
+2024-12-05 11:23:02,900 - image_search - INFO - Person found with score: N/A
+2024-12-05 11:23:02,900 - image_search - INFO - Successfully performed search with image: 2024-12-05-10-31-54-045.jpg
+2024-12-05 13:06:19,093 - image_search - INFO - Creating Person object for Anies Baswedan
+2024-12-05 13:06:19,093 - image_search - INFO - Registering person in database
+2024-12-05 13:06:19,093 - image_search - INFO - Registering person: Anies Baswedan
+2024-12-05 13:06:19,093 - image_search - INFO - Generating embedding for image: dataset/lost-persons/d2ebebb5b66d41b6b7bb5f048161cfd4.jpg
+2024-12-05 13:06:19,093 - image_search - INFO - Creating Person object for Ridwan Kamil
+2024-12-05 13:06:19,093 - image_search - INFO - Registering person in database
+2024-12-05 13:06:19,093 - image_search - INFO - Registering person: Ridwan Kamil
+2024-12-05 13:06:19,093 - image_search - INFO - Generating embedding for image: dataset/lost-persons/49fa6144161a4cd5afe8ba607249d5a8.jpg
+2024-12-05 13:07:05,274 - image_search - INFO - Server running on IP: 172.15.3.237
+2024-12-05 13:07:11,928 - image_search - INFO - Creating Person objects for 2 persons
+2024-12-05 13:07:11,929 - image_search - INFO - Bulk registering persons in database
+2024-12-05 13:07:11,929 - image_search - INFO - Bulk registering 2 persons
+2024-12-05 13:07:11,929 - image_search - INFO - Generating embedding for image: dataset/lost-persons/a6943bc1e62e48ccbf651d966204dd37.jpg
+2024-12-05 13:07:13,978 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:07:13,979 - image_search - INFO - Generating embedding for image: dataset/lost-persons/eff3e11c9ca64b65a109c7f86008f7a7.jpg
+2024-12-05 13:07:14,166 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:07:14,184 - image_search - ERROR - Error in bulk insert: object ObjectApiResponse can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_repository.py", line 53, in bulk_insert
+    response = await self.es_client.bulk(body=operations)
+TypeError: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:07:14,184 - image_search - ERROR - Error in bulk registration: object ObjectApiResponse can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 31, in register_persons
+    await self.person_repository.bulk_insert(persons)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_repository.py", line 53, in bulk_insert
+    response = await self.es_client.bulk(body=operations)
+TypeError: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:07:14,184 - image_search - ERROR - Error in register_persons: object ObjectApiResponse can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/register.py", line 73, in register_persons
+    await person_service.register_persons(persons)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 31, in register_persons
+    await self.person_repository.bulk_insert(persons)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_repository.py", line 53, in bulk_insert
+    response = await self.es_client.bulk(body=operations)
+TypeError: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:07:14,184 - image_search - ERROR - Bulk registration error: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:08:25,475 - image_search - INFO - Creating Person objects for 2 persons
+2024-12-05 13:08:25,475 - image_search - INFO - Bulk registering persons in database
+2024-12-05 13:08:25,475 - image_search - INFO - Bulk registering 2 persons
+2024-12-05 13:08:25,475 - image_search - INFO - Generating embedding for image: dataset/lost-persons/2473d339faf04c9c909917646bc2ccc3.jpg
+2024-12-05 13:08:25,740 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:08:25,740 - image_search - INFO - Generating embedding for image: dataset/lost-persons/dfa01e7409db4324b2e048e46a507ab8.jpg
+2024-12-05 13:08:25,960 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:08:25,968 - image_search - ERROR - Error in bulk insert: object ObjectApiResponse can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_repository.py", line 53, in bulk_insert
+    response = self.es_client.bulk(body=operations)
+TypeError: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:08:25,969 - image_search - ERROR - Error in bulk registration: object ObjectApiResponse can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 31, in register_persons
+    await self.person_repository.bulk_insert(persons)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_repository.py", line 53, in bulk_insert
+    response = self.es_client.bulk(body=operations)
+TypeError: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:08:25,969 - image_search - ERROR - Error in register_persons: object ObjectApiResponse can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/register.py", line 73, in register_persons
+    await person_service.register_persons(persons)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 31, in register_persons
+    await self.person_repository.bulk_insert(persons)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_repository.py", line 53, in bulk_insert
+    response = self.es_client.bulk(body=operations)
+TypeError: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:08:25,969 - image_search - ERROR - Bulk registration error: object ObjectApiResponse can't be used in 'await' expression
+2024-12-05 13:08:41,380 - image_search - INFO - Server running on IP: 172.15.3.237
+2024-12-05 13:08:43,766 - image_search - INFO - Creating Person objects for 2 persons
+2024-12-05 13:08:43,766 - image_search - INFO - Bulk registering persons in database
+2024-12-05 13:08:43,766 - image_search - INFO - Bulk registering 2 persons
+2024-12-05 13:08:43,766 - image_search - INFO - Generating embedding for image: dataset/lost-persons/d02dedd15ba248689c86a993deae4f97.jpg
+2024-12-05 13:08:45,960 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:08:45,960 - image_search - INFO - Generating embedding for image: dataset/lost-persons/1260a0ca6ca14c20866a712a6d049242.jpg
+2024-12-05 13:08:46,192 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:08:46,200 - image_search - INFO - Successfully bulk inserted 2 persons
+2024-12-05 13:08:46,200 - image_search - INFO - Successfully bulk registered 2 persons
+2024-12-05 13:09:23,443 - image_search - INFO - Checking if image exists: dataset/lost-persons/d1fc0f05069c486c91648ae6f0f1afcb.jpg
+2024-12-05 13:09:23,443 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 13:09:23,443 - image_search - INFO - Getting embedding for image: dataset/lost-persons/d1fc0f05069c486c91648ae6f0f1afcb.jpg
+2024-12-05 13:09:23,443 - image_search - INFO - Generating embedding for image: dataset/lost-persons/d1fc0f05069c486c91648ae6f0f1afcb.jpg
+2024-12-05 13:09:23,666 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:09:23,667 - image_search - INFO - Searching database with image embedding
+2024-12-05 13:09:23,820 - image_search - INFO - Found 3 matching results
+2024-12-05 13:09:23,820 - image_search - INFO - Person found with score: N/A
+2024-12-05 13:09:23,820 - image_search - INFO - Successfully performed search with image: rk.jpg
+2024-12-05 13:27:50,759 - image_search - INFO - Creating Person object for Ronaldo
+2024-12-05 13:27:50,759 - image_search - INFO - Registering person in database
+2024-12-05 13:27:50,759 - image_search - INFO - Registering person: Ronaldo
+2024-12-05 13:27:50,759 - image_search - INFO - Generating embedding for image: dataset/lost-persons/a08eb90353074031b162de5c67dc052a.jpg
+2024-12-05 13:27:50,986 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:27:51,206 - image_search - INFO - Successfully inserted person: Ronaldo with response: {'_index': 'people-image-facenet', '_id': 'qW6AlZMBppJp9TTR3n7n', '_version': 1, 'result': 'created', '_shards': {'total': 2, 'successful': 1, 'failed': 0}, '_seq_no': 0, '_primary_term': 1}
+2024-12-05 13:27:51,206 - image_search - INFO - Successfully registered Ronaldo
+2024-12-05 13:27:51,206 - image_search - INFO - Successfully registered person: Ronaldo
+2024-12-05 13:30:39,848 - image_search - INFO - Server running on IP: 172.15.3.237
+2024-12-05 13:30:45,228 - image_search - INFO - Creating Person objects for 2 persons
+2024-12-05 13:30:45,228 - image_search - INFO - Bulk registering persons in database
+2024-12-05 13:30:45,228 - image_search - INFO - Bulk registering 2 persons
+2024-12-05 13:30:45,228 - image_search - INFO - Generating embedding for image: dataset/lost-persons/8f41cdefe4c2478d91fd14fcec237224.jpg
+2024-12-05 13:30:47,088 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:30:47,088 - image_search - INFO - Generating embedding for image: dataset/lost-persons/c0c20ad22b0e439ea17d8df08c9c6033.jpg
+2024-12-05 13:30:47,281 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:30:47,293 - image_search - INFO - Successfully bulk inserted 2 persons
+2024-12-05 13:30:47,293 - image_search - INFO - Successfully bulk registered 2 persons
+2024-12-05 13:31:45,431 - image_search - INFO - Checking if image exists: dataset/lost-persons/ee5da4600a7f4c739821ab631aca2c69.jpg
+2024-12-05 13:31:45,431 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 13:31:45,431 - image_search - INFO - Getting embedding for image: dataset/lost-persons/ee5da4600a7f4c739821ab631aca2c69.jpg
+2024-12-05 13:31:45,431 - image_search - INFO - Generating embedding for image: dataset/lost-persons/ee5da4600a7f4c739821ab631aca2c69.jpg
+2024-12-05 13:31:45,636 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:31:45,636 - image_search - INFO - Searching database with image embedding
+2024-12-05 13:31:45,763 - image_search - INFO - Found 1 matching results
+2024-12-05 13:31:45,763 - image_search - INFO - Person found with score: N/A
+2024-12-05 13:31:45,763 - image_search - INFO - Successfully performed search with image: rk.jpg
+2024-12-05 13:34:17,118 - image_search - INFO - Checking if image exists: dataset/lost-persons/3a4696d7616845db83fca1f89ea1c6f7.jpg
+2024-12-05 13:34:17,118 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 13:34:17,118 - image_search - INFO - Getting embedding for image: dataset/lost-persons/3a4696d7616845db83fca1f89ea1c6f7.jpg
+2024-12-05 13:34:17,118 - image_search - INFO - Generating embedding for image: dataset/lost-persons/3a4696d7616845db83fca1f89ea1c6f7.jpg
+2024-12-05 13:34:17,575 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:34:17,575 - image_search - INFO - Searching database with image embedding
+2024-12-05 13:34:17,587 - image_search - INFO - No matches found above threshold
+2024-12-05 13:34:17,587 - image_search - INFO - No matching person found
+2024-12-05 13:36:41,956 - image_search - INFO - Checking if image exists: dataset/lost-persons/40086d013b9b40d8b61428646213b74d.jpg
+2024-12-05 13:36:41,956 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 13:36:41,956 - image_search - INFO - Getting embedding for image: dataset/lost-persons/40086d013b9b40d8b61428646213b74d.jpg
+2024-12-05 13:36:41,956 - image_search - INFO - Generating embedding for image: dataset/lost-persons/40086d013b9b40d8b61428646213b74d.jpg
+2024-12-05 13:36:42,328 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:36:42,328 - image_search - INFO - Searching database with image embedding
+2024-12-05 13:36:42,338 - image_search - INFO - No matches found above threshold
+2024-12-05 13:36:42,338 - image_search - INFO - No matching person found
+2024-12-05 13:37:31,745 - image_search - INFO - Checking if image exists: dataset/lost-persons/20361dc4f6684605a293a25d7215720a.jpg
+2024-12-05 13:37:31,745 - image_search - INFO - Searching for person using facial recognition
+2024-12-05 13:37:31,745 - image_search - INFO - Getting embedding for image: dataset/lost-persons/20361dc4f6684605a293a25d7215720a.jpg
+2024-12-05 13:37:31,745 - image_search - INFO - Generating embedding for image: dataset/lost-persons/20361dc4f6684605a293a25d7215720a.jpg
+2024-12-05 13:37:32,083 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-05 13:37:32,083 - image_search - INFO - Searching database with image embedding
+2024-12-05 13:37:32,092 - image_search - INFO - No matches found above threshold
+2024-12-05 13:37:32,092 - image_search - INFO - No matching person found
