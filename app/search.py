@@ -21,13 +21,10 @@ async def search_by_image(image_path: str, service) -> dict:
         # Search for person
         logger.info("Searching for person using facial recognition")
         result = await service.find_person_by_image(image_path)
-
-        if not result:
+        # print("search_by_image", result)
+        if result.get("status") == "not_found":
             logger.info("No matching person found")
-            return {
-                "status": "not_found",
-                "message": "No matching person found in the database"
-            }
+            return result
 
         logger.info(f"Person found with score: {result.get('_score', 'N/A')}")
         return {

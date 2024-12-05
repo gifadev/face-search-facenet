@@ -47,7 +47,7 @@ class PersonService:
             
             logger.info("Searching database with image embedding")
             result = await self.person_repository.search_by_image(image_embedding)
-            # print ("ini result",result)
+            # print("find_person_by_image", result)
             return result
         except Exception as e:
             logger.error(f"Error in find_person_by_image: {str(e)}", exc_info=True)

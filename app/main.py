@@ -12,9 +12,11 @@ from fastapi.staticfiles import StaticFiles
 import uuid
 import socket
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Optional
+from typing import Optional, List
 import aiofiles
 from datetime import datetime
+import json
+import asyncio
 
 settings = get_settings()
 
@@ -179,6 +181,101 @@ async def register_person_api(
         logger.error(f"Error in register_person_api: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
 
+@app.post("/register-bulk/")
+async def register_bulk_persons(
+    request: Request,
+    files: List[UploadFile] = File(...),
+    persons_data: str = Form(...),
+    enforce_detection: bool = Form(True)
+):
+    """
+    Register multiple persons with their details and images in bulk.
+    
+    Args:
+        files: List of image files
+        persons_data: JSON string containing list of person details
+        
+    Returns:
+        List[dict]: List of registration results
+    """
+    try:
+        # Parse persons data JSON
+        persons = json.loads(persons_data)
+        if not isinstance(persons, list):
+            raise ImageSearchException("persons_data harus berupa array")
+        
+        if len(persons) != len(files):
+            raise ImageSearchException("Jumlah data person harus sama dengan jumlah file gambar")
+        
+        results = []
+        
+        # Process each person and image in parallel
+        async def process_person(person_data, image_file, index):
+            try:
+                # Validate date format
+                try:
+                    datetime.strptime(person_data["birth_date"], '%Y-%m-%d')
+                except ValueError:
+                    raise ImageSearchException("Invalid birth date format. Use YYYY-MM-DD")
+                
+                # Validate gender
+                if not person_data["gender"].strip():
+                    raise ImageSearchException("Gender cannot be empty")
+                
+                # Validate image
+                validate_image_file(image_file)
+                
+                # Save image
+                image_path = await save_upload_file(image_file, settings.DATASET_FOLDER)
+                
+                # Prepare person data with image path
+                person_data["image_path"] = image_path
+                
+                # Register person
+                result = await register_person(person_data, person_service)
+                logger.info(f"Successfully registered person: {person_data['full_name']}")
+                
+                return {
+                    "success": True, 
+                    "data": result, 
+                    "index": index
+                }
+            except Exception as e:
+                logger.error(f"Error processing person at index {index}: {str(e)}")
+                return {
+                    "success": False, 
+                    "error": str(e), 
+                    "index": index,
+                    "person_data": person_data
+                }
+        
+        # Create tasks for parallel processing
+        tasks = [
+            process_person(person_data, image_file, idx)
+            for idx, (person_data, image_file) in enumerate(zip(persons, files))
+        ]
+        
+        # Execute all tasks concurrently
+        results = await asyncio.gather(*tasks)
+        
+        # Separate successful and failed registrations
+        successful = [r for r in results if r["success"]]
+        failed = [r for r in results if not r["success"]]
+        
+        return JSONResponse({
+            "status": "completed",
+            "total": len(results),
+            "successful": len(successful),
+            "failed": len(failed),
+            "results": results
+        })
+        
+    except json.JSONDecodeError:
+        raise ImageSearchException("Format JSON untuk persons_data tidak valid")
+    except Exception as e:
+        logger.error(f"Bulk registration error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
 @app.post("/search/")
 async def search_person(image: UploadFile = File(...)):
     """
@@ -190,23 +287,23 @@ async def search_person(image: UploadFile = File(...)):
     Returns:
         dict: Search results with matching persons
     """
+    temp_path = None
     try:
         # Validate image
         validate_image_file(image)
         
         # Save temporary image for processing
         temp_path = await save_upload_file(image, settings.DATASET_FOLDER)
-        
         try:
             # Perform search
             results = await search_by_image(temp_path, person_service)
+            print("ini results",results)
             if results.get("status") == "success" and results.get("data"):
                 data = results["data"]['hits']['hits'][0]
                 print("ini result" , data)
                 score = data['_score']
                 source_data = data['_source']
                 image_path = source_data.get("image_path", "")
-                print(source_data.get("full_name"))
                 
                 # Create response with image URL
                 response = {
@@ -235,10 +332,11 @@ async def search_person(image: UploadFile = File(...)):
         finally:
             # Clean up temporary file
             if os.path.exists(temp_path):
-                os.remove(temp_path)
+                print (temp_path)
+                # os.remove(temp_path)
                 
     except ImageSearchException as e:
         raise
     except Exception as e:
         logger.error(f"Error in search_person: {str(e)}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail=f"{str(e)}")

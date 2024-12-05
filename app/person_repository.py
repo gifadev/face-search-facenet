@@ -2,9 +2,12 @@ from typing import List, Dict
 from elasticsearch import AsyncElasticsearch
 from app.util import Util
 from app.logger import logger
+from app.config import get_settings
+
+settings = get_settings()
 
 class PersonRepository:
-    def __init__(self, es_client: AsyncElasticsearch, index_name: str = "people-image-deepface"):
+    def __init__(self, es_client: AsyncElasticsearch, index_name: str):
         self.es_client = es_client
         self._index_name = index_name
 
@@ -69,7 +72,7 @@ class PersonRepository:
             search_body = {
                 "knn": {
                     "field": "image_embedding",
-                    "k": 3,
+                    "k": settings.ELASTICSEARCH_SEARCH_SIZE,
                     "num_candidates": 100,
                     "query_vector": image_embedding
                 },
@@ -84,23 +87,22 @@ class PersonRepository:
             search_result = self.es_client.search(
                 index=self._index_name,
                 body=search_body,
-                size=3
+                size=settings.ELASTICSEARCH_SEARCH_SIZE
             )
 
             # Validasi threshold
-            threshold = 0.89
             results = [
                 hit['_source'] for hit in search_result['hits']['hits']
-                if hit['_score'] >= threshold
+                if hit['_score'] >= settings.ELASTICSEARCH_SEARCH_THRESHOLD
             ]
 
             if results:
                 logger.info(f"Found {len(results)} matching results") 
-                # return results[0]  # Return the best match
                 return search_result
             
             logger.info("No matches found above threshold")
-            return None
+            return {"status": "not_found", "message": "No matching results found"}
+            
         except Exception as e:
             logger.error(f"Error in search_by_image: {str(e)}", exc_info=True)
             raise

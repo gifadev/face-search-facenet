@@ -1,15 +1,16 @@
 from elasticsearch import Elasticsearch
+from app.config import get_settings
 import getpass
+
+settings = get_settings()
 
 class Util:
     @staticmethod
-    def get_index_name():
-        return "people-image-deepface"
-
-    @staticmethod
     def get_connection():
-
-        es = Elasticsearch(hosts="http://localhost:9200",basic_auth=("admin", "4dm1nus3r"))
+        es = Elasticsearch(
+            hosts=settings.ELASTICSEARCH_URL,
+            basic_auth=(settings.ELASTICSEARCH_USERNAME, settings.ELASTICSEARCH_PASSWORD)
+        )
         es.info() 
         return es
 
