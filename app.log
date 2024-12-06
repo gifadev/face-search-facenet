@@ -9893,3 +9893,12 @@ ValueError: Face could not be detected in dataset/lost-persons/74410b88a0354b50a
 2024-12-06 14:42:59,610 - image_search - INFO - Found 1 matching results
 2024-12-06 14:42:59,611 - image_search - INFO - Person found with score: N/A
 2024-12-06 14:42:59,611 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-42-56-485.jpg
+2024-12-06 15:05:31,624 - image_search - INFO - Checking if image exists: dataset/lost-persons/5096c404533f4f6195a13567a5902ad2.jpg
+2024-12-06 15:05:31,625 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 15:05:31,625 - image_search - INFO - Getting embedding for image: dataset/lost-persons/5096c404533f4f6195a13567a5902ad2.jpg
+2024-12-06 15:05:31,625 - image_search - INFO - Generating embedding for image: dataset/lost-persons/5096c404533f4f6195a13567a5902ad2.jpg
+2024-12-06 15:05:32,707 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 15:05:32,707 - image_search - INFO - Searching database with image embedding
+2024-12-06 15:05:32,715 - image_search - INFO - Found 1 matching results
+2024-12-06 15:05:32,715 - image_search - INFO - Person found with score: N/A
+2024-12-06 15:05:32,715 - image_search - INFO - Successfully performed search with image: fajri.jpg

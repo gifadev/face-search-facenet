@@ -8,7 +8,8 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "Image Search People API"
     
     # File Upload Settings
-    DATASET_FOLDER: str = "dataset/lost-persons"
+    DATASET_FOLDER: str = "dataset/persons"
+    DATASET_LOST_FOLDER: str = "dataset/lost-persons"
     MAX_FILE_SIZE: int = 5 * 1024 * 1024  # 5MB
     ALLOWED_EXTENSIONS: set = {".jpg", ".jpeg", ".png"}
     

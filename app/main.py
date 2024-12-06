@@ -269,7 +269,7 @@ async def search_person(image: UploadFile = File(...)):
         validate_image_file(image)
         
         # Save temporary image for processing
-        temp_path = await save_upload_file(image, settings.DATASET_FOLDER)
+        temp_path = await save_upload_file(image, settings.DATASET_LOST_FOLDER)
         try:
             # Perform search
             results = await search_by_image(temp_path, person_service)
