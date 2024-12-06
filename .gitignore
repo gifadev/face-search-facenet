@@ -2,3 +2,4 @@ myenv/
 dataset/persons/*
 dataset/lost-persons/*
 dataset/register/*
+app.log/
