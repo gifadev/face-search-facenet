@@ -1,5 +1,7 @@
 myenv/
 dataset/persons/*
 dataset/lost-persons/*
+!dataset/lost-persons/.gitkeep
 dataset/register/*
-app.log/
+!dataset/register/.gitkeep
+app.log

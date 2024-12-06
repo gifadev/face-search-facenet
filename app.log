@@ -9627,3 +9627,269 @@ ValueError: Face could not be detected in dataset/lost-persons/4ac8076177e042ae8
 2024-12-06 14:15:39,791 - image_search - INFO - Found 1 matching results
 2024-12-06 14:15:39,791 - image_search - INFO - Person found with score: N/A
 2024-12-06 14:15:39,791 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-15-37-077.jpg
+2024-12-06 14:20:30,866 - image_search - INFO - Checking if image exists: dataset/lost-persons/8359153dabbb415cb7a680b1257c80da.jpg
+2024-12-06 14:20:30,866 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:20:30,866 - image_search - INFO - Getting embedding for image: dataset/lost-persons/8359153dabbb415cb7a680b1257c80da.jpg
+2024-12-06 14:20:30,866 - image_search - INFO - Generating embedding for image: dataset/lost-persons/8359153dabbb415cb7a680b1257c80da.jpg
+2024-12-06 14:20:32,428 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:20:32,428 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:20:32,506 - image_search - INFO - Found 1 matching results
+2024-12-06 14:20:32,506 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:20:32,506 - image_search - INFO - Successfully performed search with image: fajri.jpg
+2024-12-06 14:20:43,085 - image_search - INFO - Checking if image exists: dataset/lost-persons/20379c079daa4736bce10d5e9ce3323f.jpg
+2024-12-06 14:20:43,085 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:20:43,085 - image_search - INFO - Getting embedding for image: dataset/lost-persons/20379c079daa4736bce10d5e9ce3323f.jpg
+2024-12-06 14:20:43,085 - image_search - INFO - Generating embedding for image: dataset/lost-persons/20379c079daa4736bce10d5e9ce3323f.jpg
+2024-12-06 14:20:45,229 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:20:45,229 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:20:45,246 - image_search - INFO - Found 1 matching results
+2024-12-06 14:20:45,246 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:20:45,246 - image_search - INFO - Successfully performed search with image: rajadi.jpg
+2024-12-06 14:39:23,125 - image_search - INFO - Checking if image exists: dataset/lost-persons/02d548f719e140bcaaf77998766e15d0.jpg
+2024-12-06 14:39:23,126 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:39:23,126 - image_search - INFO - Getting embedding for image: dataset/lost-persons/02d548f719e140bcaaf77998766e15d0.jpg
+2024-12-06 14:39:23,126 - image_search - INFO - Generating embedding for image: dataset/lost-persons/02d548f719e140bcaaf77998766e15d0.jpg
+2024-12-06 14:39:23,715 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:39:23,716 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:39:23,783 - image_search - INFO - No matches found above threshold
+2024-12-06 14:39:23,783 - image_search - INFO - No matching person found
+2024-12-06 14:39:30,242 - image_search - INFO - Checking if image exists: dataset/lost-persons/fd91c1e2b1584ecca1e33c619538882a.jpg
+2024-12-06 14:39:30,242 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:39:30,242 - image_search - INFO - Getting embedding for image: dataset/lost-persons/fd91c1e2b1584ecca1e33c619538882a.jpg
+2024-12-06 14:39:30,242 - image_search - INFO - Generating embedding for image: dataset/lost-persons/fd91c1e2b1584ecca1e33c619538882a.jpg
+2024-12-06 14:39:30,880 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:39:30,880 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:39:30,893 - image_search - INFO - Found 1 matching results
+2024-12-06 14:39:30,894 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:39:30,894 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-39-27-648.jpg
+2024-12-06 14:39:52,891 - image_search - INFO - Checking if image exists: dataset/lost-persons/3d37b04d35614cbfb4ffb736f14dc6bf.jpg
+2024-12-06 14:39:52,891 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:39:52,892 - image_search - INFO - Getting embedding for image: dataset/lost-persons/3d37b04d35614cbfb4ffb736f14dc6bf.jpg
+2024-12-06 14:39:52,892 - image_search - INFO - Generating embedding for image: dataset/lost-persons/3d37b04d35614cbfb4ffb736f14dc6bf.jpg
+2024-12-06 14:39:53,202 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:39:53,202 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:39:53,216 - image_search - INFO - Found 1 matching results
+2024-12-06 14:39:53,216 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:39:53,216 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-39-50-371.jpg
+2024-12-06 14:40:10,049 - image_search - INFO - Checking if image exists: dataset/lost-persons/824b0ec44cf8454a9a5846ca1e63fe94.jpg
+2024-12-06 14:40:10,050 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:40:10,050 - image_search - INFO - Getting embedding for image: dataset/lost-persons/824b0ec44cf8454a9a5846ca1e63fe94.jpg
+2024-12-06 14:40:10,050 - image_search - INFO - Generating embedding for image: dataset/lost-persons/824b0ec44cf8454a9a5846ca1e63fe94.jpg
+2024-12-06 14:40:10,294 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:40:10,294 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:40:10,303 - image_search - INFO - Found 1 matching results
+2024-12-06 14:40:10,303 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:40:10,303 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-40-06-669.jpg
+2024-12-06 14:40:17,503 - image_search - INFO - Checking if image exists: dataset/lost-persons/6d2c1fb803d44fa89b8b4bb74c3143ac.jpg
+2024-12-06 14:40:17,504 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:40:17,504 - image_search - INFO - Getting embedding for image: dataset/lost-persons/6d2c1fb803d44fa89b8b4bb74c3143ac.jpg
+2024-12-06 14:40:17,504 - image_search - INFO - Generating embedding for image: dataset/lost-persons/6d2c1fb803d44fa89b8b4bb74c3143ac.jpg
+2024-12-06 14:40:17,754 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:40:17,755 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:40:17,764 - image_search - INFO - Found 1 matching results
+2024-12-06 14:40:17,764 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:40:17,764 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-40-15-087.jpg
+2024-12-06 14:40:28,132 - image_search - INFO - Checking if image exists: dataset/lost-persons/36004fdf9b1746e59fe3561107d893a9.jpg
+2024-12-06 14:40:28,132 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:40:28,132 - image_search - INFO - Getting embedding for image: dataset/lost-persons/36004fdf9b1746e59fe3561107d893a9.jpg
+2024-12-06 14:40:28,132 - image_search - INFO - Generating embedding for image: dataset/lost-persons/36004fdf9b1746e59fe3561107d893a9.jpg
+2024-12-06 14:40:28,417 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:40:28,418 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:40:28,428 - image_search - INFO - Found 1 matching results
+2024-12-06 14:40:28,428 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:40:28,428 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-40-25-641.jpg
+2024-12-06 14:40:40,058 - image_search - INFO - Checking if image exists: dataset/lost-persons/e0e4c7d754df466abe7557b1aaa7f1a9.jpg
+2024-12-06 14:40:40,059 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:40:40,059 - image_search - INFO - Getting embedding for image: dataset/lost-persons/e0e4c7d754df466abe7557b1aaa7f1a9.jpg
+2024-12-06 14:40:40,059 - image_search - INFO - Generating embedding for image: dataset/lost-persons/e0e4c7d754df466abe7557b1aaa7f1a9.jpg
+2024-12-06 14:40:40,453 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:40:40,453 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:40:40,487 - image_search - INFO - No matches found above threshold
+2024-12-06 14:40:40,487 - image_search - INFO - No matching person found
+2024-12-06 14:40:46,513 - image_search - INFO - Checking if image exists: dataset/lost-persons/5e7e056c29b9464989e4c1fd9fe48e84.jpg
+2024-12-06 14:40:46,514 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:40:46,514 - image_search - INFO - Getting embedding for image: dataset/lost-persons/5e7e056c29b9464989e4c1fd9fe48e84.jpg
+2024-12-06 14:40:46,514 - image_search - INFO - Generating embedding for image: dataset/lost-persons/5e7e056c29b9464989e4c1fd9fe48e84.jpg
+2024-12-06 14:40:46,884 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:40:46,884 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:40:46,893 - image_search - INFO - No matches found above threshold
+2024-12-06 14:40:46,894 - image_search - INFO - No matching person found
+2024-12-06 14:40:56,564 - image_search - INFO - Checking if image exists: dataset/lost-persons/0a007b60c813403a8e81de2c68ca9a94.jpg
+2024-12-06 14:40:56,564 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:40:56,564 - image_search - INFO - Getting embedding for image: dataset/lost-persons/0a007b60c813403a8e81de2c68ca9a94.jpg
+2024-12-06 14:40:56,565 - image_search - INFO - Generating embedding for image: dataset/lost-persons/0a007b60c813403a8e81de2c68ca9a94.jpg
+2024-12-06 14:40:56,922 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:40:56,922 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:40:56,932 - image_search - INFO - No matches found above threshold
+2024-12-06 14:40:56,932 - image_search - INFO - No matching person found
+2024-12-06 14:41:07,847 - image_search - INFO - Checking if image exists: dataset/lost-persons/1156f0484a454ca6ba5ead64982f1cac.jpg
+2024-12-06 14:41:07,847 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:41:07,848 - image_search - INFO - Getting embedding for image: dataset/lost-persons/1156f0484a454ca6ba5ead64982f1cac.jpg
+2024-12-06 14:41:07,848 - image_search - INFO - Generating embedding for image: dataset/lost-persons/1156f0484a454ca6ba5ead64982f1cac.jpg
+2024-12-06 14:41:08,081 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:41:08,081 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:41:08,090 - image_search - INFO - No matches found above threshold
+2024-12-06 14:41:08,091 - image_search - INFO - No matching person found
+2024-12-06 14:41:16,344 - image_search - INFO - Checking if image exists: dataset/lost-persons/b18c016ea39540d382c10f9785f6ff7a.jpg
+2024-12-06 14:41:16,344 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:41:16,345 - image_search - INFO - Getting embedding for image: dataset/lost-persons/b18c016ea39540d382c10f9785f6ff7a.jpg
+2024-12-06 14:41:16,345 - image_search - INFO - Generating embedding for image: dataset/lost-persons/b18c016ea39540d382c10f9785f6ff7a.jpg
+2024-12-06 14:41:16,690 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:41:16,690 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:41:16,698 - image_search - INFO - Found 1 matching results
+2024-12-06 14:41:16,699 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:41:16,699 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-41-13-569.jpg
+2024-12-06 14:41:45,683 - image_search - INFO - Checking if image exists: dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg
+2024-12-06 14:41:45,683 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:41:45,684 - image_search - INFO - Getting embedding for image: dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg
+2024-12-06 14:41:45,684 - image_search - INFO - Generating embedding for image: dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg
+2024-12-06 14:41:45,711 - image_search - ERROR - Error generating embedding for dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 40, in get_embedding
+    embedding_result = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 42, in <lambda>
+    lambda: DeepFace.represent(img_path=image_path, model_name=model_name)
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/DeepFace.py", line 418, in represent
+    return representation.represent(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/representation.py", line 76, in represent
+    img_objs = detection.extract_faces(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/detection.py", line 105, in extract_faces
+    raise ValueError(
+ValueError: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:41:45,718 - image_search - ERROR - Error in find_person_by_image: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 46, in find_person_by_image
+    image_embedding = await Person.get_embedding(image_path)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 40, in get_embedding
+    embedding_result = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 42, in <lambda>
+    lambda: DeepFace.represent(img_path=image_path, model_name=model_name)
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/DeepFace.py", line 418, in represent
+    return representation.represent(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/representation.py", line 76, in represent
+    img_objs = detection.extract_faces(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/detection.py", line 105, in extract_faces
+    raise ValueError(
+ValueError: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:41:45,718 - image_search - ERROR - Error in search_by_image: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/search.py", line 23, in search_by_image
+    result = await service.find_person_by_image(image_path)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 46, in find_person_by_image
+    image_embedding = await Person.get_embedding(image_path)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 40, in get_embedding
+    embedding_result = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 42, in <lambda>
+    lambda: DeepFace.represent(img_path=image_path, model_name=model_name)
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/DeepFace.py", line 418, in represent
+    return representation.represent(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/representation.py", line 76, in represent
+    img_objs = detection.extract_faces(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/detection.py", line 105, in extract_faces
+    raise ValueError(
+ValueError: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:41:45,718 - image_search - ERROR - Error in search_person: Face could not be detected in dataset/lost-persons/1767174f8e8b40dd83028838491435d3.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:41:54,671 - image_search - INFO - Checking if image exists: dataset/lost-persons/289047a1aeb443f89dda8c5daf8aa4c9.jpg
+2024-12-06 14:41:54,672 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:41:54,672 - image_search - INFO - Getting embedding for image: dataset/lost-persons/289047a1aeb443f89dda8c5daf8aa4c9.jpg
+2024-12-06 14:41:54,672 - image_search - INFO - Generating embedding for image: dataset/lost-persons/289047a1aeb443f89dda8c5daf8aa4c9.jpg
+2024-12-06 14:41:55,141 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:41:55,141 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:41:55,150 - image_search - INFO - No matches found above threshold
+2024-12-06 14:41:55,150 - image_search - INFO - No matching person found
+2024-12-06 14:42:10,081 - image_search - INFO - Checking if image exists: dataset/lost-persons/7b09015ea6d24217920813f1b4edbaf2.jpg
+2024-12-06 14:42:10,081 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:42:10,081 - image_search - INFO - Getting embedding for image: dataset/lost-persons/7b09015ea6d24217920813f1b4edbaf2.jpg
+2024-12-06 14:42:10,081 - image_search - INFO - Generating embedding for image: dataset/lost-persons/7b09015ea6d24217920813f1b4edbaf2.jpg
+2024-12-06 14:42:10,390 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:42:10,390 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:42:10,401 - image_search - INFO - Found 1 matching results
+2024-12-06 14:42:10,401 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:42:10,401 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-42-07-314.jpg
+2024-12-06 14:42:40,143 - image_search - INFO - Checking if image exists: dataset/lost-persons/8e1cb44ed8c348889fa5bedcbcc8ff40.jpg
+2024-12-06 14:42:40,144 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:42:40,144 - image_search - INFO - Getting embedding for image: dataset/lost-persons/8e1cb44ed8c348889fa5bedcbcc8ff40.jpg
+2024-12-06 14:42:40,144 - image_search - INFO - Generating embedding for image: dataset/lost-persons/8e1cb44ed8c348889fa5bedcbcc8ff40.jpg
+2024-12-06 14:42:40,613 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:42:40,614 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:42:40,624 - image_search - INFO - No matches found above threshold
+2024-12-06 14:42:40,624 - image_search - INFO - No matching person found
+2024-12-06 14:42:47,665 - image_search - INFO - Checking if image exists: dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg
+2024-12-06 14:42:47,665 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:42:47,665 - image_search - INFO - Getting embedding for image: dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg
+2024-12-06 14:42:47,665 - image_search - INFO - Generating embedding for image: dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg
+2024-12-06 14:42:47,681 - image_search - ERROR - Error generating embedding for dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 40, in get_embedding
+    embedding_result = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 42, in <lambda>
+    lambda: DeepFace.represent(img_path=image_path, model_name=model_name)
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/DeepFace.py", line 418, in represent
+    return representation.represent(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/representation.py", line 76, in represent
+    img_objs = detection.extract_faces(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/detection.py", line 105, in extract_faces
+    raise ValueError(
+ValueError: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:42:47,682 - image_search - ERROR - Error in find_person_by_image: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 46, in find_person_by_image
+    image_embedding = await Person.get_embedding(image_path)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 40, in get_embedding
+    embedding_result = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 42, in <lambda>
+    lambda: DeepFace.represent(img_path=image_path, model_name=model_name)
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/DeepFace.py", line 418, in represent
+    return representation.represent(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/representation.py", line 76, in represent
+    img_objs = detection.extract_faces(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/detection.py", line 105, in extract_faces
+    raise ValueError(
+ValueError: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:42:47,682 - image_search - ERROR - Error in search_by_image: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+Traceback (most recent call last):
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/search.py", line 23, in search_by_image
+    result = await service.find_person_by_image(image_path)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person_service.py", line 46, in find_person_by_image
+    image_embedding = await Person.get_embedding(image_path)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 40, in get_embedding
+    embedding_result = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/me/app/image_search/image-search-people-deepface-facenet/app/person.py", line 42, in <lambda>
+    lambda: DeepFace.represent(img_path=image_path, model_name=model_name)
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/DeepFace.py", line 418, in represent
+    return representation.represent(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/representation.py", line 76, in represent
+    img_objs = detection.extract_faces(
+  File "/home/me/app/image_search/image-search-people/myenv/lib/python3.10/site-packages/deepface/modules/detection.py", line 105, in extract_faces
+    raise ValueError(
+ValueError: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:42:47,682 - image_search - ERROR - Error in search_person: Face could not be detected in dataset/lost-persons/74410b88a0354b50aafc691680b59616.jpg.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.
+2024-12-06 14:42:51,365 - image_search - INFO - Checking if image exists: dataset/lost-persons/d4b417cfd3ca4a03b0e3784f337c8f38.jpg
+2024-12-06 14:42:51,365 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:42:51,365 - image_search - INFO - Getting embedding for image: dataset/lost-persons/d4b417cfd3ca4a03b0e3784f337c8f38.jpg
+2024-12-06 14:42:51,365 - image_search - INFO - Generating embedding for image: dataset/lost-persons/d4b417cfd3ca4a03b0e3784f337c8f38.jpg
+2024-12-06 14:42:51,583 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:42:51,583 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:42:51,593 - image_search - INFO - No matches found above threshold
+2024-12-06 14:42:51,593 - image_search - INFO - No matching person found
+2024-12-06 14:42:59,214 - image_search - INFO - Checking if image exists: dataset/lost-persons/8b56f111092e41f7b5886344320e4ad4.jpg
+2024-12-06 14:42:59,215 - image_search - INFO - Searching for person using facial recognition
+2024-12-06 14:42:59,215 - image_search - INFO - Getting embedding for image: dataset/lost-persons/8b56f111092e41f7b5886344320e4ad4.jpg
+2024-12-06 14:42:59,215 - image_search - INFO - Generating embedding for image: dataset/lost-persons/8b56f111092e41f7b5886344320e4ad4.jpg
+2024-12-06 14:42:59,600 - image_search - INFO - Successfully generated embedding with shape: (128,)
+2024-12-06 14:42:59,600 - image_search - INFO - Searching database with image embedding
+2024-12-06 14:42:59,610 - image_search - INFO - Found 1 matching results
+2024-12-06 14:42:59,611 - image_search - INFO - Person found with score: N/A
+2024-12-06 14:42:59,611 - image_search - INFO - Successfully performed search with image: 2024-12-06-14-42-56-485.jpg
